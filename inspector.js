@@ -22,11 +22,11 @@ if ( $( 'link' ).filter( function() { return $(this).attr( 'href' ).match( 'fitn
 			nums -= 1;
 			log( 'Done:' + nums );
 			
-			var m = jQuery( res ).find( '#pageContentId' ).text().match(  /^!define [\w\.]+ +[(|\[|{].*[)|\]|}]/gm );		
+			var m = jQuery( res ).find( '#pageContentId' ).text().match(  /^!define [\w\.]+ +[(|\[|{][\s\S]*?[)|\]|}]/gm );		
 			
 			m && $.each( m, function () {				
 				
-				var v = this.match( /^!define ([\w\.]+) +[(|\[|{](.*)[)|\]|}]/ );
+				var v = this.match( /^!define ([\w\.]+) +[(|\[|{]([\s\S]*?)[)|\]|}]/ );
 				
 				vars[ v[1] ] || (vars[ v[1] ] = []);
 				vars[ v[1] ].push( { url: url, value: v[2] } );
