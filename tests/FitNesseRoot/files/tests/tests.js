@@ -14,7 +14,7 @@ test( 'number of variables', function () {
 		ok( 'SimpleVar'in data, 'simple variable defined on the page' );
 		ok( 'OverrideThisPort' in data, 'parent variable' );
 		same( data.OverrideThisPort.length, 2, 'parent variable defined twice' );
-		
+		same( data.ComplexDefine[0].value, '', 'complex variables' );		
 		
 		start();
 	});
