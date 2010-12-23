@@ -1,2 +1,18 @@
 *.jar
 *.zip
+
+#Fitnesse Directories
+
+tests/FitNesseRoot/FitNesse/
+tests/FitNesseRoot/FrontPage/
+tests/FitNesseRoot/PageFooter/
+tests/FitNesseRoot/PageHeader/
+tests/FitNesseRoot/RecentChanges/
+tests/FitNesseRoot/files/css/
+tests/FitNesseRoot/files/html/
+tests/FitNesseRoot/files/images/
+tests/FitNesseRoot/files/javascript/
+tests/FitNesseRoot/files/templates/
+tests/FitNesseRoot/properties
+tests/FitNesseRoot/updateDoNotCopyOverList
+tests/FitNesseRoot/updateList
