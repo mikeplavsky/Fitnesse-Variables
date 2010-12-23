@@ -3,16 +3,17 @@
 
 #Fitnesse Directories
 
-tests/FitNesseRoot/FitNesse/
-tests/FitNesseRoot/FrontPage/
-tests/FitNesseRoot/PageFooter/
-tests/FitNesseRoot/PageHeader/
-tests/FitNesseRoot/RecentChanges/
-tests/FitNesseRoot/files/css/
-tests/FitNesseRoot/files/html/
-tests/FitNesseRoot/files/images/
-tests/FitNesseRoot/files/javascript/
-tests/FitNesseRoot/files/templates/
-tests/FitNesseRoot/properties
-tests/FitNesseRoot/updateDoNotCopyOverList
-tests/FitNesseRoot/updateList
+FitNesseRoot/FitNesse/
+FitNesseRoot/FrontPage/
+FitNesseRoot/PageFooter/
+FitNesseRoot/PageHeader/
+FitNesseRoot/RecentChanges/
+FitNesseRoot/files/css/
+FitNesseRoot/files/html/
+FitNesseRoot/files/images/
+FitNesseRoot/files/javascript/
+FitNesseRoot/files/templates/
+FitNesseRoot/properties
+FitNesseRoot/updateDoNotCopyOverList
+FitNesseRoot/updateList
+tests
