@@ -11,11 +11,11 @@ function fv_variables(url) {
 			
 			nums -= 1;
 			
-			var m = jQuery( res ).find( '#pageContentId' ).text().match(  /^!define [\w\.]+ +[(|\[|{][\s\S]*?[)|\]|}]/gm );		
+			var m = jQuery( res ).find( '#pageContentId' ).text().match(  /^!define [\w\.]+ +[\(|\[|\{][\s\S]*?[\)|\]|\}]/gm );		
 			
 			m && $.each( m, function () {				
 				
-				var v = this.match( /^!define ([\w\.]+) +[(|\[|{]([\s\S]*?)[)|\]|}]/ );
+				var v = this.match( /^!define ([\w\.]+) +[\(|\[|\{]([\s\S]*)[\)|\]|\}]/ );
 				
 				vars[ v[1] ] || (vars[ v[1] ] = []);
 				vars[ v[1] ].push( { url: url, value: v[2] } );

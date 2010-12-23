@@ -4,6 +4,10 @@
 !define ComplexDefine (${SimpleVar}${OverrideThisPort})
 !include IncludeDefine
 
+!define TwiceVar [0]
+!define TwiceVar [1]
+!define TwiceVar [2]
+
 
 !-<link rel="Stylesheet" media="screen" href="/files/tests/lib/qunit.css" /><script src="/files/tests/lib/qunit.js" type="text/javascript"></script>
 <script src="files/tests/lib/jquery-1.4.4.js" type="text/javascript"></script>
