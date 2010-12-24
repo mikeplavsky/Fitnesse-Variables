@@ -54,8 +54,9 @@ test( 'variables ui', function () {
 	data.Variable1 = [];	
 	data.Variable1.push( {url: 'http://server/Start' , value: 20 } );
 	
-	data.Variable2 = [];
+	data.Variable2 = [];	
 	data.Variable2.push( {url: 'http://server/Start' , value: 20 } );	
+	data.Variable2.push( {url: 'http://server/Start/NewTest' , value: 10 } );	
 	
 	$( '#fv-found-variables' ).trigger( 'message', data );	
 	
