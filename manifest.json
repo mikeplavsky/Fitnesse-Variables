@@ -13,7 +13,8 @@
   "content_scripts": [
   {
       "matches": ["http://*/*"],
-      "js": [ "lib/jquery-1.4.4.js", "FitNesseRoot/files/core/variables.js", "inspector.js" ]
+      "css": ["FitNesseRoot/files/core/styles/base.css"],
+      "js": [ "lib/jquery-1.4.4.js", "FitNesseRoot/files/core/utils.js", "FitNesseRoot/files/core/variables.js", "FitNesseRoot/files/core/ui.js", "inspector.js" ]
   }
   ]
   

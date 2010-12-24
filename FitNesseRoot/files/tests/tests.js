@@ -1,10 +1,21 @@
-module( 'fitnesse viewer variables' );
+module( 'fitnesse viewer variables', {
+
+		setup : function () {			
+			
+			$( '#fv-found-variables' ).unbind( 'message' );
+			$( '#fv-found-variables' ).remove();
+		}
+	
+});
 
 test( 'number of variables', function () {
-
-    stop();
 	
-	$( 'body' ).append('<div id=fv-found-variables>').bind( 'message', function (event,data) { 	
+	stop();
+	
+	var $res = $( '<div id=fv-found-variables>' );
+	$('body').append( $res );
+	
+	$res.bind( 'message', function (event,data) { 	
 	
 		var length = 0;
 		$.each( data, function () { length += 1; } )
@@ -33,3 +44,46 @@ test( 'number of variables', function () {
 	fv_variables( location.origin + '/FvVariablesTests.GrandPa.DaD.SoN' );	
 	
 });
+
+test( 'variables ui', function () {	
+	
+	fv_ui();
+	
+	var data = {};	
+	
+	data.Variable1 = [];	
+	data.Variable1.push( {url: 'http://server/Start' , value: 20 } );
+	
+	data.Variable2 = [];
+	data.Variable2.push( {url: 'http://server/Start' , value: 20 } );	
+	
+	$( '#fv-found-variables' ).trigger( 'message', data );	
+	
+	same( $( '#fv-found-variables' ).text(), 'Variables(2)', 'number of variables'  )
+	 	
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

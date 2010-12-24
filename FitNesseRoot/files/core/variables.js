@@ -33,8 +33,11 @@ function fv_variables(url) {
 	
 		var re = /\.\w*$/;
 	
-		if (! url.match( re ) ) {
+		if (! url.match( re ) ) {	
+					
+			getVars( url + '?edit' );
 			return;
+			
 		}
 		
 		getVars( url + '?edit' );

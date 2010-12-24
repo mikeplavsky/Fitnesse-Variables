@@ -1,0 +1,22 @@
+#fv-found-variables {
+
+    font-family: 'Lucida Grande', 'Bitstream Vera Sans', 'trebuchet ms', verdana, tahoma, arial, sans-serif;
+    font-size: 1em;
+
+    width:110px;
+    text-align: center;
+    
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    
+    background-color: rgb(66,174,194);
+    border-radius: 10px;
+    
+    margin: 3px;
+    padding: 5px;
+    
+    color: white;   
+    cursor: pointer;
+    
+}
