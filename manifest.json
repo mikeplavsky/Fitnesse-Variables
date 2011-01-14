@@ -14,7 +14,7 @@
   {
       "matches": ["http://*/*"],
       "css": ["FitNesseRoot/files/core/styles/base.css"],
-      "js": [ "lib/jquery-1.4.4.js", "FitNesseRoot/files/core/utils.js", "FitNesseRoot/files/core/variables.js", "FitNesseRoot/files/core/ui.js", "inspector.js" ]
+      "js": [ "FitNesseRoot/files/core/soyutils.js", "FitNesseRoot/files/core/ui-templates.js", "lib/jquery-1.4.4.js", "FitNesseRoot/files/core/utils.js", "FitNesseRoot/files/core/variables.js", "FitNesseRoot/files/core/ui.js", "inspector.js" ]
   }
   ]
   

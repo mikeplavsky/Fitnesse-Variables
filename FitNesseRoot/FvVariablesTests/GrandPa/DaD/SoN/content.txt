@@ -17,6 +17,10 @@
 <link rel="Stylesheet" media="screen" href="/files/core/styles/base.css" />
 <script src="/files/core/variables.js" type="text/javascript"></script>
 <script src="/files/core/utils.js" type="text/javascript"></script>
+
+<script src="/files/core/soyutils.js" type="text/javascript"></script>
+<script src="/files/core/ui-templates.js" type="text/javascript"></script>
+
 <script src="/files/core/ui.js" type="text/javascript"></script>
 
 <script src="/files/tests/tests.js" type="text/javascript"></script>

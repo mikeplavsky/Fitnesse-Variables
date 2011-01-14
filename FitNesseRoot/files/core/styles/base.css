@@ -20,3 +20,55 @@
     cursor: pointer;
     
 }
+
+#fv-variables-dlg {  
+
+    padding: 5px;
+    
+    background-color: white;
+    color: black;
+    cursor: pointer;    
+    
+    position: fixed;
+    overflow: auto;
+    bottom:0px;
+    right:0px;
+
+    max-height: 80%;
+    max-width:  50%;
+    
+    width: auto;
+    height: auto;    
+     
+}
+
+#fv-variables-dlg a {
+    outline: 0;
+}
+
+.fv-variable {
+    font-weight: bold;
+ }
+
+.fv-variable-value-box {
+    margin-top: 2px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.fv-variable-url  a, .fv-variable-url a:link, .fv-variable-url a:hover{    
+    color: rgb(66,174,194);
+}
+
+#fv-variables-hide {
+    
+    color: rgb(66,174,194);
+    font-weight: bold;
+    
+    padding: 3px;
+    
+    position: absolute;
+    top:0;
+    right:0;
+
+}

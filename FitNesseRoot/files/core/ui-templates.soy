@@ -1,0 +1,26 @@
+{namespace fitnesse.variables}
+
+/**
+* @param variables
+* @param data
+*/
+{template .main}
+    {foreach  $v in $variables}
+        <div class="fv-variable">
+            {$v}
+        </div>
+        {foreach $d in $data[$v]} 
+            <div class="fv-variable-value-box">        
+                
+                <div class="fv-variable-value">
+                    {$d.value}
+                </div>                
+                
+                <span class="fv-variable-url">
+                    <a href="{$d.url}" target="_blank">{$d.url}</a>
+                </span>
+                
+            </div>
+        {/foreach}
+    {/foreach}
+{/template}

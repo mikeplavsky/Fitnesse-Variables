@@ -1,7 +1,7 @@
 var create_array = function (map) {
     
     var res = [];
-    $.each( map, function (n,v) { res.push( v ); } );    
+    $.each( map, function (n,v) { res.push( n ); } );    
     
     return res;
     

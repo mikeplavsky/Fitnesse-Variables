@@ -16,3 +16,6 @@ FitNesseRoot/files/templates/
 FitNesseRoot/properties
 FitNesseRoot/updateDoNotCopyOverList
 FitNesseRoot/updateList
+FitNesseRoot/files/testProgress
+FitNesseRoot/files/testResults
+FitNesseRoot/ErrorLogs
