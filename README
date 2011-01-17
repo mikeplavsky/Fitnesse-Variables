@@ -1,1 +1,6 @@
+It shows you the number and values of all (presumably ;)) variables influencing this test page.
 
+Technically it goes all the way up from test page URL analyzing pages through ?edit command. 
+If some variable is found several times you see it. Depending on circumstances it can be a problem or just a regular situation. 
+
+In any way it shows you what Fitnesse doesn't - all variables in single place!  
