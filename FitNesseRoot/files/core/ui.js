@@ -1,13 +1,13 @@
 function fv_ui() {
 
-	$( 'body' ).append( '<div id="fv-found-variables" display="none">' );
+	$( 'body' ).append( '<div id="fv-found-variables">' );
+    $("#fv-found-variables").hide();
     
     $( '#fv-found-variables' ).bind( 'message', function (ev,data) {	
 		
 		var vars = create_array(data).sort();		
 		
 		if (!vars.length) {
-			$(this).hide();
 			return;						
 		}		
 		
