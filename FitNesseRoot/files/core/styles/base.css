@@ -27,7 +27,6 @@
     
     background-color: white;
     color: black;
-    cursor: pointer;    
     
     position: fixed;
     overflow: auto;
@@ -64,6 +63,7 @@
     
     color: rgb(66,174,194);
     font-weight: bold;
+    cursor: pointer;
     
     padding: 3px;
     
