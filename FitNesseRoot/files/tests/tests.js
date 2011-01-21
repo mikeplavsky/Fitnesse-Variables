@@ -8,6 +8,14 @@ module( 'fitnesse viewer variables', {
 	
 });
 
+QUnit.log = function (res,msg) {
+    console.log( msg );
+}
+
+QUnit.testDone = function(name, failures, total) {
+    console.log( name + ':' + total + '/' + failures );
+}
+
 function _test() {}
 
 test( 'variables ui', function () {	

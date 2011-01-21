@@ -1,0 +1,16 @@
+!*> runner
+!define TEST_SYSTEM {slim}
+!define COMMAND_PATTERN (PowerShell -executionpolicy unrestricted -file .\slim.ps1)
+*!
+
+|script|
+|eval|rm ./AT/Data/chrome_debug.log|
+|eval|!-$global:p = [diagnostics.process]::start( "chrome.exe", "-enable-logging --v=1 --user-data-dir=$(gl)\AT\Data http://localhost:8080/FvVariablesTests.GrandPa.DaD.SoN")-!|
+|eval|sleep 2|
+|check|eval|$p.Path|=~/chrome.exe/|
+|eval|$p.Kill()|
+
+|Subset Query:Script|gc ./AT/Data/chrome_debug.log|
+|String|
+|=~/number of variables:7/0/|
+|=~/variables ui:1/0/|
