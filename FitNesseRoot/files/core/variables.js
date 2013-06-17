@@ -11,7 +11,7 @@ function fv_variables(url) {
 			
 			nums -= 1;
 			
-			var m = jQuery( res ).find( '#pageContentId' ).text().match(  /^!define [\w\.]+ +(?:(?:\{[^}]*\})|(?:\([^)]*\))|(?:\[[^\]]*\]))/gm );		
+			var m = jQuery( res ).find( '#pageContent' ).text().match(  /^!define [\w\.]+ +(?:(?:\{[^}]*\})|(?:\([^)]*\))|(?:\[[^\]]*\]))/gm );		
 			
 			m && $.each( m, function () {	
 

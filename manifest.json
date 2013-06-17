@@ -1,12 +1,13 @@
 {
+
+  "manifest_version": 2,  
+
   "name": "Fitnesse Variables",
   "version": "0.1.1",
   
   "description": "Show all variables affecting this Test",
   
-  "background_page": "background.html",
-  
-   "permissions": [
+  "permissions": [
     "http://*/*"
   ],
   
