@@ -1,5 +1,7 @@
 *.jar
 *.zip
+*.swp
+*.swo
 
 #Fitnesse Directories
 
